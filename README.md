@@ -5,9 +5,9 @@ Welcome to my Android development study notes! In my journey to learning Android
 I’ve been documenting my learning progress while building Android apps, and I realized the value of having a clear and accessible reference for key concepts. By writing this out with the assistance of ChatGPT, I’ve deepened my understanding of Android development and made the explanations as clear and practical as possible.
 
 # Topics Covered :
-| [**Intent**](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/Intent.md) |
-| (R.id)[https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/R.id.md] |
-| (val VS var)[https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md] |
+[**Intent**](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/Intent.md)  
+(R.id)[https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/R.id.md]
+(val VS var)[https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md] 
 
 # How to Use This Repository
 Feel free to explore the topics outlined in the notes. Each section is designed to give a brief yet thorough explanation of the core Android concepts, with code examples, best practices, and additional notes to enhance your learning.
