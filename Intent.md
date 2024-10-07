@@ -6,9 +6,13 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
 # Explicit Intent
 ![explicit](https://github.com/user-attachments/assets/e8e03da9-14bb-455c-9815-ee89e1d31307)
 ## Definition : 
-  An **Explicit Intent** is used when you know the exact class (compontnt) you want to start. For example, 
-  1. Navigating from one activity to another wihin the same app.
+  An **Explicit Intent** is used when you know the exact class (compontnt) you want to start. 
+  For example, 
+  1. Navigating from one activity to another within the same app.
   2. Starting a specific service or component where you know the exact destination.
 
-
+#Code
+```
+  val intent = Intent(this, SecondActivity::class.java)
+```
 # Implicit Intent
