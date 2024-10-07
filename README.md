@@ -6,8 +6,9 @@ I’ve been documenting my learning progress while building Android apps, and I 
 
 # Topics Covered :
 [**Intent**](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/Intent.md)  
-[R.id](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/R.id.md)
-[val VS var](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md) 
+[**R.id**](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/R.id.md)
+[**val VS var**](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md)
+
 
 # How to Use This Repository
 Feel free to explore the topics outlined in the notes. Each section is designed to give a brief yet thorough explanation of the core Android concepts, with code examples, best practices, and additional notes to enhance your learning.
