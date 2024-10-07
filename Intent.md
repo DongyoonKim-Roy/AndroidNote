@@ -43,3 +43,11 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
     finish()
   }
 ```
+
+# Key Differences Between Explicit and Implicit Intent :
+| **Aspect** | **Explicit** | **Implicit** |
+| ----- | ----- |
+| **Component Targeting** | Specify the exact target component by name. | Specify an action, and Android finds a suitable component. |
+| Use case | Communication within the app (Between activities or servicies) | Delegating an action to another app or letting the system choose a component. |
+| Example Action | Starting a specific activity `(SecondActivity)` | Opening a web page sending an email, or sharing data. |
+| Example Intent | `Intent(this, SecondActivity::class.java)` | `Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"))` |
