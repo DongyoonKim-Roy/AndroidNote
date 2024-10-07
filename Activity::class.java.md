@@ -26,8 +26,9 @@ In this example :
 > For emxaple, `this`(`from`) -> `SecondActivity::class.java`(`to, target`)
 
 # Summary
-- When you use `Intent` in Andorid to navigate from one activity to another, the `Intent` constructor expects a Java `Class<T>` object to specify which activity you want to start.  
+When you use `Intent` in Andorid to navigate from one activity to another, the `Intent` constructor expects a Java `Class<T>` object to specify which activity you want to start.  
   In Kotlin, classes are representd by `KClass`, but the `Intent` class is a Java class, so it requires a Java `Class<T>`.  
   Thus, to start an activity in Kotlin, you use `Activity::class.java` to get the required Java class reference.
+  Think `this` is from Activity and `SecondActivity:class.java` is the to, target Activity.
   
   
