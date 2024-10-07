@@ -11,8 +11,9 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
   1. Navigating from one activity to another within the same app.
   2. Starting a specific service or component where you know the exact destination.
 
-#Code
+# Code
 ```
   val intent = Intent(this, SecondActivity::class.java)
 ```
+> [val VS var], [SecondActivity::class.java]
 # Implicit Intent
