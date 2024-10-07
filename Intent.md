@@ -13,7 +13,12 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
 
 # Code
 ```
-  val intent = Intent(this, SecondActivity::class.java)
+  val explicitButton = findViewById(R.id.explicitButton)
+  explicitButton.setOnClickListner(){
+    val intent = Intent(this, SecondActivity::class.java)
+    startActivity(intent)
+    finish()
+  }
 ```
-> [val VS var](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md), [SecondActivity::class.java](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/Activity%3A%3Aclass.java.md)
+> [val VS var](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md), [SecondActivity::class.java](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/Activity%3A%3Aclass.java.md), [R.id](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/R.id.md)
 # Implicit Intent
