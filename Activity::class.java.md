@@ -15,11 +15,15 @@ This syntax is related to Kotlin's reflection system and how it represents class
 ```
 val btn = findViewById<Button>(R.id.exampleBtn)
 btn.setOnClickListener(){
-  val intent = Intent(this, MainActivity::class.java)
- startActivity(intent)
- finish()
+  val intent = Intent(this, SecondActivity::class.java)
+  startActivity(intent)
+  finish()
 }
 ```
+In this example :
+- `this` : Refers to the current activity.
+- `SecondActivity::class.java` : Refers to Java class reference for SecondActivity, wihch is passed as the target activity to be started by intent.
+> For emxaple, `this`(`from`) -> `SecondActivity::class.java`(`to, target`)
 
 # Summary
 - When you use `Intent` in Andorid to navigate from one activity to another, the `Intent` constructor expects a Java `Class<T>` object to specify which activity you want to start.  
