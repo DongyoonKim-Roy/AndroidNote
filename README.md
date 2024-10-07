@@ -8,5 +8,5 @@ Feel free to explore the topics outlined in the notes. Each section is designed 
 If you’re new to Android or a seasoned developer looking for clear explanations of specific topics, this repository will be a helpful resource.
 
 #
-Happy coding! 🌟
+**Happy coding! 🌟**
 #
