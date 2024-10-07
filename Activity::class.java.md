@@ -7,7 +7,7 @@ This syntax is related to Kotlin's reflection system and how it represents class
   An activity is one of the fundamental components of an Android app, representing a single screen with a user interface.
 - `::class` : Kotlin's syntax for obtaining a reference to a **Kotlin class**.  
   It returns a `KClass`, which represents a class in Kotlin.  
-  For example, `MainActivity::class` or `SecondActivity::class` refers to the MainActivity class itself.
+  For example, `MainActivity::class` or `SecondActivity::class` refers to the MainActivity or SecondActivity class itself.
 - `.java` : is used to get the **Java class reference** (`Class<T>`), which is required for interoperability between Kotlin and Java.  
   Android's **Intent** (which is written in Java) expects a Class<T> type for the target component (like an `Activity`), so the `::class.java` converts the Kotlin class reference (`KClass`) to a Java class reference.
 
