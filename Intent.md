@@ -15,5 +15,5 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
 ```
   val intent = Intent(this, SecondActivity::class.java)
 ```
-> [val VS var], [SecondActivity::class.java]
+> [val VS var](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/val%20VS%20var.md), [SecondActivity::class.java](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/Activity%3A%3Aclass.java.md)
 # Implicit Intent
