@@ -68,3 +68,28 @@ It is sotred in the `res/layout` folder.
     <dimen name="default_padding">10dp</dimen>
     <dimen name="default_text_size">12sp</dimen>
 ```
+
+### Style and Theme Resources (`res/values/styles.xml`)
+- Defines themes and styles to apply consistent appearance (like font sizes, and colors) across difeerent views or activities.
+
+### Example
+```xml
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorAccent">@color/personal_color</item>
+    </style>
+</resources>
+```
+
+### Menu Resources (`res/menu`)
+- Defines the contents of menus and toolbars in XML
+
+### Example
+```xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_settings"
+          android:title="@string/settings"
+          android:icon="@drawable/ic_settings"/>
+</menu>
+```
