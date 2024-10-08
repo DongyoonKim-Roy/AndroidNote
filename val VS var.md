@@ -9,7 +9,7 @@ In Kotlin, `val` and `var` are two ways to declare variables, but they have an i
   However, the object it refers to can still be mutable.
 - It makes the code safer and easier to reason about.
 
-# Example
+## Example
 ```
 //This will cause an error.
 val name = "Jungle"
@@ -25,13 +25,13 @@ list.add(4)
 - `var` is used to declare a `mutable` variable.
 - The value of `var` can be changed after it has been initialized.
 
-# Example
+## Example
 ```
 var name = "Jungle"
 name = "NoJungle"
 ```
 
-# Ket Differences : 
+# Key Differences : 
 | **Aspect** | `val` | `var` |
 | :----------: | :----------: | :----------: |
 | **Mutability** | **Immutable** (**Read-only**), cannot be reassigned. | **Mutable**, can be reassigned. |
