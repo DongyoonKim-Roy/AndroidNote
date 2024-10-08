@@ -7,7 +7,7 @@ In Android, there are varous units of measuremnet used for defining dimensions s
   - **[px](#px)**
   - **[pt](#pt)**
   - **[in](#in)**
-  - [mm](#`mm (Millimeters)`)
+  - [mm](#mm-(Millimeters))
 
 # dp (Density-independent Pixels)
 - It is used to define the size of **UI** elements in a way that is **consistent across different screen densities**.  
