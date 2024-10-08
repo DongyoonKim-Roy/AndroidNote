@@ -19,7 +19,7 @@ list.add(4)
 ```
 
 # var (Mutable variable)
-- 'var' is used to declare a `mutable` variable.
+- `var` is used to declare a `mutable` variable.
 - The value of `var` can be changed after it has been initialized.
 
 # Example
