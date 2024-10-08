@@ -11,7 +11,7 @@ The `R` class is a **generated class** that holds references to all the resouces
 ## R.id
 The `R.id` is a **nested class inside the `R` class** that contains IDs for each UI element (like `Button`, `TextView`, `RecyclerView`, etc.) defined in your layout files. When you assign an ID to a view in XML using the `android:id` attribute, it creates a constant in `R.id`.
 
-#Example
+# Example
 ## XML
 ```
 <Button
