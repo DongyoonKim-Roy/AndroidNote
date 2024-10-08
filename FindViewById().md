@@ -26,7 +26,7 @@ Since `findViewById()` is generic, it specifies the type of view you expect (in 
 - It is **safer** because you specify the expected view type, and the compiler will check that the cast is correct. This prevents potential `ClassCastException` errors at runtime.
 
 # Key Differencese
-| **Aspect ** | `val btn: Button = findViewById(R.id.myButton)` | `val btn = findViewById<Button>(R.id.btnId)` |
+| **Aspect** | `val btn: Button = findViewById(R.id.myButton)` | `val btn = findViewById<Button>(R.id.btnId)` |
 |  :----------: | :----------: | :----------: |
 | **Type declaration** | Explicit (`Button`) | Inferred by the compiler |
 | **Explicit casting** | Needed before API 26 | Not required, even before API 26 |
