@@ -41,5 +41,5 @@ name = "NoJungle"
 
 #Summary
  `val` and `var` are two ways to declare variables.
- - val is used to decalre  a `read-only` or `immutable` variable.
- -  var is used to declare a `mutable` variable.
+ - **val** is used to decalre  a `read-only` or `immutable` variable.
+ - **var** is used to declare a `mutable` variable.
