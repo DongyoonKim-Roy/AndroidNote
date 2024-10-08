@@ -9,7 +9,7 @@ In Android, there are varous units of measuremnet used for defining dimensions s
   - **[in](#in)**
   - **[mm](#mm)**
 
-# dp
+# dp (Density-independent Pixels)
 # sp
 # px
 # pt
