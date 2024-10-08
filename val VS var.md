@@ -26,7 +26,6 @@ list.add(4)
 ```
 var name = "Jungle"
 name = "NoJungle"
-
 ```
 
 # Ket Differences : 
