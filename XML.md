@@ -8,7 +8,7 @@ It is sotred in the `res/layout` folder.
 - Common XML Elements are `TextView`, `BUtton`, `ImageVIew`, `LinearLayout`, `ConstraintLayout`, and `RecyclerView`.
 
 # Examlple
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
