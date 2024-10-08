@@ -3,6 +3,7 @@ In Kotlin, `val` and `var` are two ways to declare variables, but they have an i
 
 
 # val (Immutable variable)
+## Definition : 
 - `val` is used to declare a `read-only` or `immutable` variable.
 - Once a value is assigned to a `val` variable, it **cannot be reassigned**.  
   However, the object it refers to can still be mutable.
@@ -20,6 +21,7 @@ list.add(4)
 ```
 
 # var (Mutable variable)
+## Definition : 
 - `var` is used to declare a `mutable` variable.
 - The value of `var` can be changed after it has been initialized.
 
