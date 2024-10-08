@@ -93,3 +93,11 @@ It is sotred in the `res/layout` folder.
           android:icon="@drawable/ic_settings"/>
 </menu>
 ```
+
+# Manifest XML (AndroidManifest.xml)
+- `AndroidManifest.xml` file is a critical configuration file that **declares essential information** about the app to the Android system.
+  It must be included in every Android project.
+- It is located at the root of the `app/src/main/` directory.
+
+  
+
