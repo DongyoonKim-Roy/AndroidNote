@@ -36,3 +36,6 @@ It is sotred in the `res/layout` folder.
 # Resource XML Files
 **Resource files** are non-code assets that your app uses, such as colors, strings, images, and dimensions. There are stored in various subfolders within the `res/` directory.
 
+## Types of Resorce XMLs
+### String Resource (`res/values/strings.xml`)
+- abcde
