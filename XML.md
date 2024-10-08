@@ -99,6 +99,19 @@ It is sotred in the `res/layout` folder.
   It must be included in every Android project.
 - It is located at the root of the `app/src/main/` directory.
 - Roles :
-  - asdf
+  - Defines the app's **package name**.
+  - Lists all **activities, services, receivers,** and **content providers**.
+  - Specifies **permissions** the app requires (e.g., accessing the camera, internet).
+  - Declares the **app's entry point** (the `MainActivity or launcher activity).
+  - Defines hardware and software features the app needs (e.g., camera, Bluetooth).
+
+## Package Declaration
+- Defines the unique package name for the application
+## Example
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+```
+The `package` attribute **uniquely identifies** the app **on the Play Store** and **on the device**.
   
 
