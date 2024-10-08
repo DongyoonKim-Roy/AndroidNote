@@ -1,7 +1,7 @@
 # R.id
 In Android, `R.id` is reference to the unique ID associated with a UI element defiend in your XML layout files. There IDs allow you to access and manipulate the UI elements programmatically in your code, such as in `findViewById()`.
 
-# Break Down of R.id
+# Breakdown of `R.id`
 ## R class
 The `R` class is a **generated class** that holds references to all the resouces in your Android project. It contains nested classes representing different resource types, such as
 - `R.layout` : Refers to layout XML files (e.g., `R.layout.activity_main`).
