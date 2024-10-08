@@ -37,6 +37,7 @@ It is sotred in the `res/layout` folder.
 **Resource files** are non-code assets that your app uses, such as colors, strings, images, and dimensions. There are stored in various subfolders within the `res/` directory.
 
 ## Types of Resorce XMLs
+
 ### String Resource (`res/values/strings.xml`)
 - Stores text strings, typically used for internationalization (i.e., supporting different laguages).
 
@@ -46,4 +47,23 @@ It is sotred in the `res/layout` folder.
     <string name="app_name">My App</string>
     <string name="btn_string">Custom Button</string>
 </resources>
+```
+
+### Color Resources (`res/values/colors.xml`)
+-Defines colors that can be reused throghout the app.
+
+### Example
+```
+<resources>
+    <color name="primary_color">#6200EE</color>
+    <color name="personal_color">#62100ff</color>
+</resources>
+```
+
+### Dimens Resources (`res/values/dimens.xml`)
+- Stores dimension values (e.g., padding, margins) to maintain consistency across the app.
+
+### Example
+```xml
+
 ```
