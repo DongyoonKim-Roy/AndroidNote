@@ -32,8 +32,8 @@ Since `findViewById()` is generic, it specifies the type of view you expect (in 
 | **Explicit casting** | Needed before API 26 | Not required, even before API 26 |
 | **Ease of use** | Slightly verbose due to the type declaration | More concies and cleaner |
 | **Runtime safety** | Requries careful casting to avoid exceptions | Safer and type-checked at compile time |
-| Version compatibility | Used before API 26 when `findViewById()` wasn't generic | Ideal for API 26+ (with generic `findViewById()`) |
-| Readability | A bit less readable due to type declaration | More readable wit cleaner syntax |
+| **Version compatibility** | Used before API 26 when `findViewById()` wasn't generic | Ideal for API 26+ (with generic `findViewById()`) |
+| **Readability** | A bit less readable due to type declaration | More readable wit cleaner syntax |
 
 # Summary
 - Before API 26 : `findViewById()` returns `View`, so it requires type cast, `val btn: Button = findViewById(R.id.btnId) as Button`.
