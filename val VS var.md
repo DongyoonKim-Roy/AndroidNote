@@ -38,3 +38,8 @@ name = "NoJungle"
 | **Reassignment allowed** | No | Yes |
 | **Example** |  `val x = 5` | `var y = 5` |
 | **Best Use Cases** | Cnstants, values that won't change after initialization | Values that need to be updated over time |
+
+#Summary
+ `val` and `var` are two ways to declare variables.
+ - val is used to decalre  a `read-only` or `immutable` variable.
+ -  var is used to declare a `mutable` variable.
