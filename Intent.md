@@ -50,3 +50,8 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
 | **Use case** | Communication within the app (Between activities or servicies) | Delegating an action to another app or letting the system choose a component. |
 |**Example Action** | Starting a specific activity `(SecondActivity)` | Opening a web page sending an email, or sharing data. |
 | **Example Intent** | `Intent(this, SecondActivity::class.java)` | `Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"))` |
+
+# Summary
+There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**.  
+- **Explicit Intent** is used to navigate from one activity to another **within the same app**.
+- **Implicit Intent** is used to open a web page, send an email or share data **using another app**.
