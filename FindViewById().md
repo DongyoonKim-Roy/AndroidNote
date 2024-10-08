@@ -2,7 +2,7 @@
 `findViewById()` is a method used to retrieve a reference to a **view** object in the current layout. This allows you to access and manipulate UI elements (like **Button**, **TextView**, **ImageVIew**, etc.). The method searches the view hierarchy for a view iwth the specified ID and returns the view if found.
 
 
-# Difference between `val btn : Button = findViewById(R.id.btnId)` and `val btn = findViewById<Button>(R.id.btnId)`
+# Difference between `val btn : Button = findViewById(R.id.btnId)` and  `val btn = findViewById<Button>(R.id.btnId)`
 
 
 ## `val button: Button = findViewById(R.id.btnId)`
