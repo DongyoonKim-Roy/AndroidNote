@@ -38,4 +38,12 @@ It is sotred in the `res/layout` folder.
 
 ## Types of Resorce XMLs
 ### String Resource (`res/values/strings.xml`)
-- abcde
+- Stores text strings, typically used for internationalization (i.e., supporting different laguages).
+
+### Example
+```
+<resources>
+    <string name="app_name">My App</string>
+    <string name="btn_string">Custom Button</string>
+</resources>
+```
