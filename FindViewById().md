@@ -7,17 +7,18 @@
 
 ## `val button: Button = findViewById(R.id.btnId)`
 The variable `button` is explicitly declared as type `Button`.  
-It's telling Kotlin that the result of `findViewById() should be treated as a `Button`, even though the return type of `findViewById()` is a generic `View`.  
+It's telling Kotlin that the result of `findViewById()` should be treated as a `Button`, even though the return type of `findViewById()` is a generic `View`.  
 Because of that, **type casting** will happen internally.  
-It is needed because before API level 26 (Android 8.0), `findViewById() **returns a generic** `**View**` object, so** you needed to case it to the appropriate view type** like `Button`, `TextView`, etc.  
+It is needed because before API level 26 (Android 8.0), `findViewById()` **returns a generic** `**View**` object, so **you needed to case it to the appropriate view type** like `Button`, `TextView`, etc.  
 ## Example
 ```
 val btn: Button = findViewById(R.id.btnid) as Button
 ```
 
 ## `val btn = findViewById<Button>(R.id.btnId)`
-This is a more modern and simpler approach, introduced in **API level 26 (Android 8.0)** and later. The method `findViewById()` is now **generic** and can return a specific type of view without requiring explicit casting.  
-Since `findViewById()` is generic, it specifies the type of view you expect (in this case, `Button`), and the compiler automatically knows that the returned type is `Button` .  
+This is a more modern and simpler approach, introduced in **API level 26 (Android 8.0)** and later.  
+The method `findViewById()` is now **generic** and can return a specific type of view without requiring explicit casting.  
+Since `findViewById()` is generic, it specifies the type of view you expect (in this case, `Button`), and the compiler automatically knows that the returned type is `Button`.  
 
 
 # Which one is better?
