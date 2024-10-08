@@ -42,7 +42,7 @@ It is sotred in the `res/layout` folder.
 - Stores text strings, typically used for internationalization (i.e., supporting different laguages).
 
 ### Example
-```
+```xml
 <resources>
     <string name="app_name">My App</string>
     <string name="btn_string">Custom Button</string>
@@ -53,7 +53,7 @@ It is sotred in the `res/layout` folder.
 -Defines colors that can be reused throghout the app.
 
 ### Example
-```
+```xml
 <resources>
     <color name="primary_color">#6200EE</color>
     <color name="personal_color">#62100ff</color>
@@ -65,5 +65,6 @@ It is sotred in the `res/layout` folder.
 
 ### Example
 ```xml
-
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="default_text_size">12sp</dimen>
 ```
