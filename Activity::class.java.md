@@ -1,4 +1,4 @@
-# Definition
+# Activity::class.java
 In Android, `Activity:class.java` is commonly used when working with intents, especially for **explicit intents**. 
 This syntax is related to Kotlin's reflection system and how it represents classes and types in Kotlin and Java interoperability.
 
