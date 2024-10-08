@@ -27,7 +27,7 @@ button.setOnclickListener(){
   //handle btn click action.
 }
 ```
->[findViewById<Button>](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/FindViewById%3C%3E.md)
+>[findViewById\<Button>](https://github.com/DongyoonKim-Roy/AndroidNote/blob/main/FindViewById%3C%3E.md)
 
 # Summary
 `R.id` is a part of the auto-generated `R` class that contains references to the IDs of UI elements defined in your XML layout files. `findViewById()` is used with these IDs to get a reference to the views in your code so the app can interact with them programmatically.
