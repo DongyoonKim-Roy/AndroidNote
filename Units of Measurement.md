@@ -7,7 +7,7 @@ In Android, there are varous units of measuremnet used for defining dimensions s
   - **[px](#px)**
   - **[pt](#pt)**
   - **[in](#in)**
-  - [mm](#mm)
+  - [mm](#mm #(Millimeters))
 
 # dp (Density-independent Pixels)
 - It is used to define the size of **UI** elements in a way that is **consistent across different screen densities**.  
@@ -33,8 +33,7 @@ In Android, there are varous units of measuremnet used for defining dimensions s
 - It is a physical unit and will map directly to the size on the device's screen.
 - `in` might be used to specify dimensions relative to the physical screen size, but it is rare in Android development.
 
-# mm 
-(Millimeters)
+# mm (Millimeters)
 - It is similar to `in`. It maps directly to the physical dimensions on the screen.
 - It is rarely used unless physical size of UI elements matters (e.g., a design app or a tool that needs precise measurement).
 
