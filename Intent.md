@@ -43,7 +43,7 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
   }
 ```
 
-# Key Differences Between Explicit and Implicit Intent 
+# Key Differences
 | **Aspect** | **Explicit** | **Implicit** |
 | ----------      | -----------       |      ------------  |
 | **Component Targeting** | Specify the exact target component by name. | Specify an action, and Android finds a suitable component. |
