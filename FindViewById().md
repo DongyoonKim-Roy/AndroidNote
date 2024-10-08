@@ -37,5 +37,5 @@ Since `findViewById()` is generic, it specifies the type of view you expect (in 
 
 # Summary
 - Before API 26 : `findViewById()` returns `View`, so it requires type cast, `val btn: Button = findViewById(R.id.btnId) as Button`.
-- From API 26 and later : Since `findViewById()` becomes generic method, type cast is not requried, `val btn = findViewById<Button>(R.id.btnId)`.
+- API 26+ : Since `findViewById()` becomes generic method, type cast is not requried, `val btn = findViewById<Button>(R.id.btnId)`.
 In Modern Android, the **second form** is **preferred** for its **simplicity** and **compile-time safety**.
