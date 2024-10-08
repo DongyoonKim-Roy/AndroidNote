@@ -30,7 +30,7 @@ name = "NoJungle"
 
 # Ket Differences : 
 | **Aspect** | `val` | `var` |
-| ---------- | ---------- | ---------- |
+| :----------: | :----------: | :----------: |
 | **Mutability** | **Immutable** (**Read-only**), cannot be reassigned. | **Mutable**, can be reassigned. |
 | **Reassignment allowed** | No | Yes |
 | **Example** |  `val x = 5` | `var y = 5` |
