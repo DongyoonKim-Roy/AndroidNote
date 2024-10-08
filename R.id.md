@@ -23,7 +23,7 @@ The `R.id` is a **nested class inside the `R` class** that contains IDs for each
 ## Kotlin
 ```
 val button = findViewById<Button>(R.id.submitBtn)
-button.setOnclickListener{
+button.setOnclickListener(){
   //handle btn click action.
 }
 ```
