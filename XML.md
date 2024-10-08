@@ -106,12 +106,42 @@ It is sotred in the `res/layout` folder.
   - Defines hardware and software features the app needs (e.g., camera, Bluetooth).
 
 ## Package Declaration
-- Defines the unique package name for the application
+- Defines the unique package name for the application.
 ## Example
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapp">
 ```
-The `package` attribute **uniquely identifies** the app **on the Play Store** and **on the device**.
+- The `package` attribute **uniquely identifies** the app **on the Play Store** and **on the device**.
+
+## Application Declaration
+- Defines the global properties of the application, including icons, themes, and whether it supports multiple processes.
+## Example
+```xml
+<application
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme">
+```
+- `android:icon` sets the app's launcher icon.
+- `android:label` specifies the app name.
+- `android:theme` applies a global theme to the app, usually defined in `res/values/styles.xml`.
+
+## Activity Declaration (Launcher Activity)
+- Declares activities (screens) that the app contains. One activity must be declared as the entry point for the app (the **Launcher**).
+## Example
+```xml
+<activity android:name=".MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+```
+- `android:name` specifies the activity class (e.g., MainActivity) that this entry refers to.
+- `intent-filter`
+    - `android.intent.action.MAIN` (Action) declares this as the main entry point.
+    - `android.intent.category.LAUNCHER` (Category) makes the activity the app's launcher activity, meaning it appears on the app drawer.
+
   
 
