@@ -31,7 +31,7 @@ var name = "Jungle"
 name = "NoJungle"
 ```
 
-# Key Differences : 
+# Key Differences  
 | **Aspect** | `val` | `var` |
 | :----------: | :----------: | :----------: |
 | **Mutability** | **Immutable** (**Read-only**), cannot be reassigned. | **Mutable**, can be reassigned. |
