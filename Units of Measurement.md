@@ -2,11 +2,11 @@
 In Android, there are varous units of measuremnet used for defining dimensions such as font sizes, margins, padding, and layout sizes.  
   Each unit serves a specific purpose and behaves differently across devices.   
   The most common ones are 
-  - **[dp](#dp)**
-  - **[sp](#sp)**
-  - **[px](#px)**
-  - **[pt](#pt)**
-  - **[in](#in)**
+  - **[dp](#dp-Density-independent-Pixels)**
+  - **[sp](#sp-Scale-independent-Pixels)**
+  - **[px](#px-Pixles)**
+  - **[pt](#pt-Points)**
+  - **[in](#in-Inches)**
   - [mm](#mm-Millimeters)
 
 # dp (Density-independent Pixels)
