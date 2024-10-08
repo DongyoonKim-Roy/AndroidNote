@@ -9,7 +9,7 @@
 The variable `button` is explicitly declared as type `Button`.  
 It's telling Kotlin that the result of `findViewById()` should be treated as a `Button`, even though the return type of `findViewById()` is a generic `View`.  
 Because of that, **type casting** will happen internally.  
-It is needed because before **API level 26 (Android 8.0)**, `findViewById()` **returns a generic** `**View**` object, so **you needed to case it to the appropriate view type** like `Button`, `TextView`, etc.  
+It is needed because before **API level 26 (Android 8.0)**, `findViewById()` **returns a generic** `View` object, so **you needed to case it to the appropriate view type** like `Button`, `TextView`, etc.  
 ## Example
 ```
 val btn: Button = findViewById(R.id.btnid) as Button
@@ -23,7 +23,7 @@ Since `findViewById()` is generic, it specifies the type of view you expect (in 
 
 # Which one is better?
 `val button = findViewById<Button>(R.id.btnId)` is better. It is because  
-- It is **safer** because you specify the expected view type, and the compiler will check that the cast is correct. This prevents potential `**ClassCastException**` errors at runtime.
+- It is **safer** because you specify the expected view type, and the compiler will check that the cast is correct. This prevents potential `ClassCastException` errors at runtime.
 
 # Key Differencese
 | **Aspect ** | `val btn: Button = findViewById(R.id.myButton)` | `val btn = findViewById<Button>(R.id.btnId)` |
