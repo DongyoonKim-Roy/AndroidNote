@@ -37,4 +37,9 @@ In Android, there are varous units of measuremnet used for defining dimensions s
 - It is similar to `in`. It maps directly to the physical dimensions on the screen.
 - It is rarely used unless physical size of UI elements matters (e.g., a design app or a tool that needs precise measurement).
 
-#Summary
+# Summary
+- **dp** : Use for **layout elements** (like margins, padding) to ensure consistency across different screen densities.
+- **sp** : Use for **text sizes** to ensure proper scaling based on the user's font preferences.
+- **px** : Avoid unless you need specific pixel-level control.
+- **pt, in, mm** : Physical measurements, rarely used in standard app development.
+  
