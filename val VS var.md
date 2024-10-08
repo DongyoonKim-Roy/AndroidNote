@@ -1,3 +1,4 @@
+# val VS var
 In Kotlin, `val` and `var` are two ways to declare variables, but they have an important distinction in terms of **mutability** (whether the variable's value can be changed or not).
 
 
