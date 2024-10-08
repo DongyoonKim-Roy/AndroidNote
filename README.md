@@ -1,4 +1,4 @@
-# Android Study Note
+# Android Note
 Welcome to my Android development study notes! In my journey to learning Android, I’ve explored various key concepts, and with the help of **ChatGPT**, I’ve been able to gain deeper insights and clarify these topics in a more structured way. This repository serves as a collection of important Android concepts explained in a clear, detailed manner to help both beginners and experienced developers alike.
 
 # Why I Made This?
