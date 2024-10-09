@@ -81,3 +81,30 @@ android {
  - `viewBinding` automatically generates a binding class based on layout files, so view can be directly accessed by calling their IDs. No need `findViewById()`.
  - it ensures that you are working with views that actually exist in your layout. Therefore, it can be **type safety**.
  - It helps handle nullability more safely by ensuring you clean up refernces to the view when the fragment's view is destroyed, **preventing memory leak**.
+
+```kt
+class LearnFragment : AppCompatActivity() {
+    private lateinit var fragmentManager: FragmentManager
+    private lateinit var binding: ActivityLearnFragmentBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_learn_fragment)
+        binding = ActivityLearnFragmentBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.firstBtn.setOnClickListener{
+            goToFragment(Fragment1())
+        }
+        binding.secondBtn.setOnClickListener(){
+            goToFragment(Fragment2())
+        }
+
+    }
+    private fun goToFragment(fragment:Fragment){
+        fragmentManager = supportFragmentManager
+        fragmentManager.beginTransaction().replace(R.id.fragmentContainer, fragment).commit()
+    }
+}
+```
+`private lateinit var binding: ActivityLearnFragmentBinding` is added to use viewBinding from build.gradle.kts. The name can be differ (e.g., `ActivityMainBinding`, `ActivitySecondViewBinding`).
