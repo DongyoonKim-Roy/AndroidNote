@@ -78,4 +78,6 @@ android {
 }
 ```
 `viewBinding` is added because
- - asdf
+ - `viewBinding` automatically generates a binding class based on layout files, so view can be directly accessed by calling their IDs. No need `findViewById()`.
+ - it ensures that you are working with views that actually exist in your layout. Therefore, it can be **type safety**.
+ - It helps handle nullability more safely by ensuring you clean up refernces to the view when the fragment's view is destroyed, **preventing memory leak**.
