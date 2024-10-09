@@ -135,3 +135,7 @@ class Fragment2 : Fragment() {
 }
 ```
 They are component of fragment screen. From example, Fragment1.kt is Main with black background and Fragment2.kt is secondActivity with white background.
+
+# Summary
+- Activity is **essentially a screen with which users** can interact, think of **it as a container for app's UI**.
+- Fragment is **a reusable portion of the UI inside an activity.** 
