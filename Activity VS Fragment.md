@@ -19,5 +19,10 @@ Fragments are introduced to **allow developers to create flexible** and **reusab
 - They can be added or removed from an activity while the activity is running, making them useful for dynamic UIs.
 
 # Example
+## Activity
 ![frag1](https://github.com/user-attachments/assets/7dd86113-f679-4021-8381-a1febc4000e6)
+
+## Fragment
 ![frag2](https://github.com/user-attachments/assets/cd7dda19-a5b8-4367-94ff-2d0c32a68970)
+
+If see the example
