@@ -25,4 +25,7 @@ Fragments are introduced to **allow developers to create flexible** and **reusab
 ## Fragment
 ![frag2](https://github.com/user-attachments/assets/cd7dda19-a5b8-4367-94ff-2d0c32a68970)
 
-If see the example
+The example might not be perfect, but I’ll try my best to explain the difference between them.  
+In the example, there are two buttons in an Activity. When you click one of the buttons, it navigates to a second Activity, which shows the same buttons. The goal is to change the text displayed on the screen, like 'Main Activity' or 'Second Activity,' after clicking the buttons.  
+Using Activities for this setup means creating multiple buttons and Activities, which can consume more memory, especially as the app grows.  
+In contrast, with Fragments, the same two buttons can be reused, and only the text needs to be updated. This approach is more efficient because Fragments allow for changing views within a single Activity, reducing memory usage.  
