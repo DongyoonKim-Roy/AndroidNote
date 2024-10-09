@@ -12,7 +12,7 @@ This syntax is related to Kotlin's reflection system and how it represents class
   Android's **Intent** (which is written in Java) expects a Class<T> type for the target component (like an `Activity`), so the `::class.java` converts the Kotlin class reference (`KClass`) to a Java class reference.
 
 # Example
-```
+```kt
 val btn = findViewById<Button>(R.id.exampleBtn)
 btn.setOnClickListener(){
   val intent = Intent(this, SecondActivity::class.java)
