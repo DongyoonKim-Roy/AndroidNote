@@ -82,6 +82,7 @@ android {
  - it ensures that you are working with views that actually exist in your layout. Therefore, it can be **type safety**.
  - It helps handle nullability more safely by ensuring you clean up refernces to the view when the fragment's view is destroyed, **preventing memory leak**.
 
+LearnFragment.kt
 ```kt
 class LearnFragment : AppCompatActivity() {
     private lateinit var fragmentManager: FragmentManager
