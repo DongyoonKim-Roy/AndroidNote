@@ -109,3 +109,28 @@ class LearnFragment : AppCompatActivity() {
 }
 ```
 `private lateinit var binding: ActivityLearnFragmentBinding` is added to use viewBinding from build.gradle.kts. The name can be differ (e.g., `ActivityMainBinding`, `ActivitySecondViewBinding`).
+
+Fragment1.kt
+```kt
+class Fragment1 : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_1, container, false)
+    }
+}
+```
+Fragment2.kt
+```kt
+class Fragment1 : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_1, container, false)
+    }
+}
+```
