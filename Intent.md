@@ -12,7 +12,7 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
   2. Starting a specific service or component where you know the exact destination.
 
 ## Example
-```
+```kt
   val explicitButton = findViewById(R.id.explicitButton)
   explicitButton.setOnClickListner(){
     val intent = Intent(this, SecondActivity::class.java)
@@ -33,7 +33,7 @@ There are **Two types of intents** : **Explicit Intent** and **Implicit Intent**
   2. when you need to request an action but **do not care which specific app or component handles it** (e,g., opening a file or starting a camera).
 
 ## Example
-```
+```kt
   val url - "https://google.com"
   val implicitButton = findViewById(R.id.implicitButton)
   implicitButton.setOnClickListner(){
