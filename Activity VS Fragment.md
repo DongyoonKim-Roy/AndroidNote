@@ -134,4 +134,4 @@ class Fragment2 : Fragment() {
     }
 }
 ```
-They are component of fragment screen. From example, Fragment1.kt is Main with black background. Fragment2.kt is secondActivity with white background.
+They are component of fragment screen. From example, Fragment1.kt is Main with black background and Fragment2.kt is secondActivity with white background.
