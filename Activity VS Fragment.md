@@ -124,13 +124,14 @@ class Fragment1 : Fragment() {
 ```
 Fragment2.kt
 ```kt
-class Fragment1 : Fragment() {
+class Fragment2 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_1, container, false)
+        return inflater.inflate(R.layout.fragment_2, container, false)
     }
 }
 ```
+They are component of fragment screen. From example, Fragment1.kt is Main with black background. Fragment2.kt is secondActivity with white background.
