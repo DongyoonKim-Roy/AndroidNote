@@ -26,7 +26,7 @@ list.add(4)
 - The value of `var` can be changed after it has been initialized.
 
 ## Example
-```
+```kt
 var name = "Jungle"
 name = "NoJungle"
 ```
