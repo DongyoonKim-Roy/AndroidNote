@@ -13,7 +13,7 @@ The `R.id` is a **nested class inside the `R` class** that contains IDs for each
 
 # Example
 ## XML
-```
+```xml
 <Button
   android:id="@+id/submitBtn"
   android:layout_width="wrap_content"
@@ -21,7 +21,7 @@ The `R.id` is a **nested class inside the `R` class** that contains IDs for each
   android:text="submit" />
 ```
 ## Kotlin
-```
+```kt
 val button = findViewById<Button>(R.id.submitBtn)
 button.setOnclickListener(){
   //handle btn click action.
