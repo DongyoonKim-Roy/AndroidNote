@@ -11,7 +11,7 @@ It's telling Kotlin that the result of `findViewById()` should be treated as a `
 Because of that, **type casting** will happen internally.  
 It is needed because before **API level 26 (Android 8.0)**, `findViewById()` **returns a generic** `View` object, so **you needed to case it to the appropriate view type** like `Button`, `TextView`, etc.  
 ## Example
-```
+```kt
 val btn: Button = findViewById(R.id.btnid) as Button
 ```
 
