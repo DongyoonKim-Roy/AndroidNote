@@ -10,7 +10,7 @@ In Kotlin, `val` and `var` are two ways to declare variables, but they have an i
 - It makes the code safer and easier to reason about.
 
 ## Example
-```
+```kt
 //This will cause an error.
 val name = "Jungle"
 name = "NoJungle"
