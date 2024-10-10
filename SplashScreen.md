@@ -1,5 +1,5 @@
 # SplashScreen
-Splash Screen or Splash View is the initial screen that appears when an app is launchd. Its primary purpose is to display a brief introductory graphic, logo =, or brand messae while the app is loading in the background.
+Splash Screen or Splash View is the initial screen that appears when an app is launched. Its primary purpose is to display a brief introductory graphic, logo =, or brand messae while the app is loading in the background.
 ![splash](https://github.com/user-attachments/assets/cad57f35-bb0d-42ca-840c-f2e8425e49c7)
 
 # Key Characteristics of a Good Splash View
@@ -74,10 +74,11 @@ MainActivity.kt
         Thread.sleep(3000)
         installSplashScreen()
         setContentView(R.layout.activity_main)
-
     }
 ```
 `Thread.sleep(3000)` and `installSplashScreen()` are added.
 - `Thread.sleep(3000)` delays the execution of the current thread for a specified amount of time. In this case `3000` **milliseconds** which is **3 seconds**.
 - `installSplashScreen` is used to install a default splash screen for an app. it handles the display of the splash screen automatically while an app is launching before transitioning to main content.
     
+# Summary
+- Splash Screen or Splash View is the initial screen that appears when an app is launched.
