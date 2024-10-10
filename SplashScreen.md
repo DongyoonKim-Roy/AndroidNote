@@ -81,4 +81,4 @@ MainActivity.kt
 - `installSplashScreen` is used to install a default splash screen for an app. it handles the display of the splash screen automatically while an app is launching before transitioning to main content.
     
 # Summary
-- Splash Screen or Splash View is the initial screen that appears when an app is launched.
+- Splash Screen or Splash View is the **initial screen that appears when an app is launched**.
