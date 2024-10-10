@@ -1,5 +1,6 @@
 # SplashScreen
 Splash Screen or Splash View is the initial screen that appears when an app is launchd. Its primary purpose is to display a brief introductory graphic, logo =, or brand messae while the app is loading in the background.
+![splash](https://github.com/user-attachments/assets/cad57f35-bb0d-42ca-840c-f2e8425e49c7)
 
 # Key Characteristics of a Good Splash View
 - Simple Design
