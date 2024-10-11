@@ -82,3 +82,4 @@ MainActivity.kt
     
 # Summary
 - Splash Screen or Splash View is the **initial screen that appears when an app is launched**.
+> [later custome splash screen with Motion Layout](https://www.youtube.com/watch?v=icmQOZp4p6I&t=16s)
