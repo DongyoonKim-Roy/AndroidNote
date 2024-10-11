@@ -8,4 +8,47 @@ It is a bridge between the UI components (like `ListView`, `GridView`, RecyclerV
 # Types of Adapters
 
 ## ArrayAdapter
-- 
+- Used to** bind an array of objects to a UI component** like `ListView` or `Spinner`.
+
+## Example
+```kt
+val countries = arrayOf("Pasta", "Toast", "Taco", "Curry")
+val listView = findViewById<ListView>(R.id.yourListViewId)
+val adapter = ArrayAdapter(this,
+ android.R.layout.simple_list_ite_1, //The layout of each item in the list
+ countries)
+listView.adapter = adapter
+```
+
+## simpleAdapter
+- Used to bind data from more complex data structures (like a `List<Map<String, Object>>`) to a UI component.
+
+## Example
+```kt
+//Prepare data
+val dataList: MutableList<Map<String, Any>> = ArrayList()
+val item1: MutableMap<String, Any> = HashMap()
+item1["icon"] = R.drawable.icon1
+item1["text"] = "Item 1"
+dataList.add(item1)
+
+val dataList: MutableList<Map<String, Any>> = ArrayList()
+val item2: MutableMap<String, Any> = HashMap()
+item1["icon"] = R.drawable.icon1
+item1["text"] = "Item 2"
+dataList.add(item2)
+
+val from = arrayOf("icon", "text")
+val to - intArrayOf(R.id.icon, R.id.text)
+
+val adapter = SimpleAdapter(
+  this,
+  dataList,
+  R.layout.row_layout,
+  from,
+  to
+)
+
+val listView = findViewById<ListView>(R.id.yourListViewId)
+listView.adapyer = adapter
+```
