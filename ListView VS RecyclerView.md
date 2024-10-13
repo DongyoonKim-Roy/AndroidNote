@@ -69,5 +69,5 @@ class customAdapter: RecyclerView.Adapter<customAdapter.MyViewHolder>(){
 - `ViewHolder` needs to be manually implemented.
 
 ## RecyclerView
-- The `ViwHolder` pattern is **mandatory**, which ensures efficient view recycling and better performance.
+- The `ViewHolder` pattern is **mandatory**, which ensures efficient view recycling and better performance.
 - The `ViewHolder` class is automatically used to cache views, making the scrolling smoother, especially for large datasets.
