@@ -90,3 +90,6 @@ listView.adapter = adapter
     } 
   }
   ```
+
+# Summary
+- Adapter is a bridge between the UI components and **the data source** that fills those UI components with content.
