@@ -2,7 +2,7 @@
 It is a class used to create views from XML layout resources programmatically. **Essentially, it converts an XML layout fil into its corresponding `View` objects.**  
 When a lyout file in XML is declared, Android doesn't immediately create the `View` objects. `LayoutInflater` takes care of "inflating" the layout, which means converting the XML layout description into actual views that you can interact with.
 
-
+-------------------------------------------------------------------------- Need to work again.
 Common Use Cases:
 Inflating a view in a ListView or RecyclerView adapter.
 Inflating a custom view for a dialog or another dynamic part of your UI.
