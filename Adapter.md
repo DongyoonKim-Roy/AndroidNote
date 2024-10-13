@@ -2,7 +2,7 @@
 It is a bridge between the UI components (like `ListView`, `GridView`, RecyclerView`, etc.) and **the data source** that fills those UI components with content.
 
 # Key Tasks
-- Mapping data to views : Adapters take data from a data source (like an array, list, or database) and convert each item in that data source into a view that can be displayed in a UI component.
+- Mapping data to views : Adapters **take data from a data source** (like an array, list, or database) and **convert each item in that data source into a view** that can be displayed in a UI component.
 - Managing the view creation : Adapters are responsible for creating and recycling the views for the UI components efficiently.
 
 # Types of Adapters
@@ -20,7 +20,7 @@ val adapter = ArrayAdapter(this,
 listView.adapter = adapter
 ```
 
-## simpleAdapter
+## SimpleAdapter
 - Used to bind data from more complex data structures (like a `List<Map<String, Object>>`) to a UI component.
 
 ## Example
@@ -51,4 +51,20 @@ val adapter = SimpleAdapter(
 
 val listView = findViewById<ListView>(R.id.yourListViewId)
 listView.adapyer = adapter
+```
+
+## BaseAdapter
+- It is the base class for all other adapters. It can be extended to create custom adapters when the default ones do not meet your needs.
+
+## Example
+```kt
+val dataList = listOf(
+ mapOf("name" to "Item 1", "description" to "Description 1"),
+ mapOf("name" to "Item 2", "description" to "Description 2")
+)
+val from = arrayOf("name", "description")
+val to = intArrayOf(R.id.textName, R.id.textDescription)
+
+val adapter = SimpleAdapter(this, dataList, R.layout.list_item, from, to)
+listView.adapter = adapter
 ```
