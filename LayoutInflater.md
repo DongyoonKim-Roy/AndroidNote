@@ -14,7 +14,6 @@ Step 1: Create a Custom Layout (list_item.xml)
 You can define a custom layout for each item in your ListView or RecyclerView. Here’s a simple example layout (list_item.xml), with an ImageView and a TextView:
 
 xml
-코드 복사
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
