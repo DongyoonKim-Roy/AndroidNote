@@ -65,4 +65,9 @@ class customAdapter: RecyclerView.Adapter<customAdapter.MyViewHolder>(){
 # ViewHolder Pattern
 
 ## ListView
--
+- The `ViewHolder` pattern is **optional**, though it is recommended for performance reasons. Without it, `ListView` can re-bind views unnecessarily, causing slower performance.
+- `ViewHolder` needs to be manually implemented.
+
+## RecyclerView
+- The `ViwHolder` pattern is **mandatory**, which ensures efficient view recycling and better performance.
+- The `ViewHolder` class is automatically used to cache views, making the scrolling smoother, especially for large datasets.
