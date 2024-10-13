@@ -49,3 +49,20 @@ class customAdapter: RecyclerView.Adapter<customAdapter.MyViewHolder>(){
   override fun getItemCount(): Int = dataList.size
 }
 ```
+
+# Layout Management
+
+## ListView
+- Limited to a **vertical scrolling list**. It only supports a single column list and doesn't allow much flexibility in terms of layout customization.
+
+## RecyclerView
+- Upoorts multiple **layout managers**, providing much more flexibility
+  - LinearLayoutManager : For vertical or horizontal lists (similar to ListView but more powerful).
+  - GridLayoutManager : For displaying items in a grid.
+  - StaggeredGridLayoutManager : For creating staggered grids
+- Custom layout managers can be created for more complex use cases.
+
+# ViewHolder Pattern
+
+## ListView
+-
