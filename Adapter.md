@@ -68,3 +68,25 @@ val to = intArrayOf(R.id.textName, R.id.textDescription)
 val adapter = SimpleAdapter(this, dataList, R.layout.list_item, from, to)
 listView.adapter = adapter
 ```
+
+## RecyclerView.Adapter
+- It is used with the `RecyclerView` component. This adapter provides more flexibility and control than the `ListView` or `GridView` adapters.
+
+  ## Example
+  ```kt
+  val sampleData = listOf("Apple", "Orange", "Cherry", "PineApple")
+  val recyclerView: RecyclerView = findViewById(R.id.myRecyclerView)
+  recyclerView.layoutManager = LinearLayoutManager(this)
+  recyclerView.adapter = object : RecyclerView.Adapter<RecyclerView.ViewHolder(){
+    inner class SimpleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+     val textView: TextView = itemView.findViewById(android.R.id.text1)
+    }
+    override fun onBindViewHolder(holder: RecyclerView, ViewHolder, position: Int){
+      val simpleViewHolder = holder as SImpleViewHolder
+      simpleViewHolder.textView.text = sampleData[position]
+    }
+    override fun getItemCount(): Int{
+     return sampleData.size
+    } 
+  }
+  ```
