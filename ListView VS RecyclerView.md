@@ -11,7 +11,7 @@ Both `ListView` and `RecyclerView` are used to display lists of data in Android,
 
 # Performance
 ## ListView
--Recycling is manual, requiring developers to check whether a `convertView` is available to reuse.
+- Recycling is manual, requiring developers to check whether a `convertView` is available to reuse.
 
 ## Example
 ```kt
@@ -26,3 +26,26 @@ override fun getView(position: Int, convertView: View?, parent: ViewGroup): View
 ```
 - `convertView` : In a `ListView`, as the user scrolls, the system only keeps a limited number of item views in memory, rather than creating a new view for each item in the list.
   To avoid creating a new view each time, the `ListView` tries to **reuse** old views (which are no longer visible on the screen) through the `convertView` parameter.
+
+## RecylerView
+- Implements a more efficient view recycling system via `ViewHolder` pattern by default. It handles view recycling and re-binding more efficiently, especially for alrge lists, which improves performance significantly.
+- VieHolder pattern is mandatory, leading to better organization and performance.
+
+```kt
+class customAdapter: RecyclerView.Adapter<customAdapter.MyViewHolder>(){
+  class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    //initialize views here
+  }
+
+  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+    return MyViewHolder(view)
+  }
+
+  override fun onBindViewHolder(holder: MyViewHolder, position: Int){
+    //Bind data to views
+  }  
+
+  override fun getItemCount(): Int = dataList.size
+}
+```
