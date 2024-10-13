@@ -8,7 +8,7 @@ It is a bridge between the UI components (like `ListView`, `GridView`, RecyclerV
 # Types of Adapters
 
 ## ArrayAdapter
-- Used to** bind an array of objects to a UI component** like `ListView` or `Spinner`.
+- Used to **bind an array of objects to a UI component** like `ListView` or `Spinner`.
 
 ## Example
 ```kt
