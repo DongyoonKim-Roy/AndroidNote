@@ -2,6 +2,12 @@
 It is a class used to create views from XML layout resources programmatically. **Essentially, it converts an XML layout fil into its corresponding `View` objects.**  
 When a lyout file in XML is declared, Android doesn't immediately create the `View` objects. `LayoutInflater` takes care of "inflating" the layout, which means converting the XML layout description into actual views that you can interact with.
 
+# ActivityMainBinding.inflate(layoutInflater)
+It is using `Biew Binding`, a feature in Android that makes it easier to interact with views in layouts.  
+It generates a binding class for each XML layout file.  
+This binding class contains direct references to all the views in the layout, removing the need for `findViewById()`
+
+
 -------------------------------------------------------------------------- Need to work again.  
 Common Use Cases:
 Inflating a view in a ListView or RecyclerView adapter.
