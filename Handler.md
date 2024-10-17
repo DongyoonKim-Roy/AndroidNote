@@ -1,8 +1,8 @@
 # Handler
 - A `Handler` is part of Android's concurrency model and is **typically used for scheduling and executing messages or runnable code at a future point in time**.  
 - It allows a thread to send and process **Message** and **Runnable** objects that are associated with a thread's **MessageQueue**.
-- Communication between threads : UI updates must be done on the **main (UI) thread**. However, background tasks like network calls or heavy computations are done on backgroun threads. A `Handler` **helps pass messages from a background thread to the main thread to update the UI safely**.
-- Schedulint tasks : `Handler` can be used to post delayed or repated tasks. THis is useful for tasks that should e executed after some time (e.g., animations, periodic updates).
+- **Communication between threads** : UI updates must be done on the **main (UI) thread**. However, background tasks like network calls or heavy computations are done on backgroun threads. A `Handler` **helps pass messages from a background thread to the main thread to update the UI safely**.
+- **Scheduling tasks** : `Handler` can be used to post delayed or repated tasks. THis is useful for tasks that should e executed after some time (e.g., animations, periodic updates).
 
 # How a Handler works
 `Handler` is associated with a **Looper** which manages the `MessageQueue` of the thread. The Looper constantly processes messages in the queue and executes them on the associated thread.
