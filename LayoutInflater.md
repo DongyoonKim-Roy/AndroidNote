@@ -28,6 +28,12 @@ override fun onCreate(savedInstanceState: Bundle?){
   }
 }
 ```
+- `ActivityMainBinding` : is the generated binding class for our `activity_main.xml` layout file.
+- `inflate(layoutInflater)` : inflates the layout and returns an instance of the `ActivityMainBinding` class, which now contains references to all the views in our layout.
+- `binding.root` : refers to the root `View` of our layout. This ensures that entire layout is shown when the activity starts.
+
+# Summary
+
 
 -------------------------------------------------------------------------- Need to work again.  
 Common Use Cases:
