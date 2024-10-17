@@ -46,3 +46,5 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+In this example, if you click the mainBtn, 6 seconds after the secondActivity is opening.  
+However, when you click the secBtn, the secondActivity is opening immediately.
