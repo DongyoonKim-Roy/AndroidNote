@@ -16,3 +16,33 @@ button.postDelayed({
   button.text = "Text updated after 3 seconds"
 }, 3000)
 ```
+
+`postDelayed` with `Button`
+```kt
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val handler = Handler(Looper.getMainLooper())
+
+        binding.mainBtn.setOnClickListener {
+            handler.postDelayed({
+                val intent = Intent(this, secondActivity::class.java)
+                startActivity(intent)
+            }, 6000)
+        }
+
+        binding.secBtn.setOnClickListener() {
+            val intent = Intent(this, secondActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+    }
+}
+```
