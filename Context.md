@@ -10,6 +10,15 @@
 - View Inflation : Many UI-related tasks, like inflating layouts or getting a `LayoutInflater`, require a `Context`.
 - Lifetime Awareness : Using the right type of context ensures we avoid memory leaks or improper behavior by tying the context's lifecycle to the correct component.
 
+# Example
+```kt
+val appName = context.getString(R.string.app_name)
+val color = ContextCompat.getColor(context, R.color.colorPrimary)
+
+val intent = Intent(context, NewActivity::class.java)
+context.startActivity(intent)
+```
+
 # Summary
 - `Context` is a central class in Android that provies access to app resources and system services.
 - There are different types of `Context` based on what component (Activity, Application, Service), and each type has specific use cases.
