@@ -79,6 +79,7 @@ recycler_view_item.xml
 
 </RelativeLayout>
 ```
+
 Adapter.kt
 ```kt
 package com.example.longpressprac.Adapter
@@ -99,7 +100,6 @@ class Adapter(context: Context, private var items: MutableList<ExampleItem>) :
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val title: TextView = view.findViewById(R.id.title)
         val description: TextView = view.findViewById(R.id.description)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -115,5 +115,14 @@ class Adapter(context: Context, private var items: MutableList<ExampleItem>) :
         holder.title.text = currItem.title
         holder.description.text = currItem.description
     }
+}
+```
+
+ExampleItem.kt
+```kt
+package com.example.longpressprac.Model
+
+data class ExampleItem(val title: String, val description: String){
+
 }
 ```
