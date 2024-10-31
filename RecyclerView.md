@@ -79,3 +79,41 @@ recycler_view_item.xml
 
 </RelativeLayout>
 ```
+Adapter.kt
+```kt
+package com.example.longpressprac.Adapter
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.example.longpressprac.Model.ExampleItem
+import com.example.longpressprac.R
+import org.w3c.dom.Text
+
+class Adapter(context: Context, private var items: MutableList<ExampleItem>) :
+    RecyclerView.Adapter<Adapter.ViewHolder>() {
+
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val title: TextView = view.findViewById(R.id.title)
+        val description: TextView = view.findViewById(R.id.description)
+
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_item, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val currItem = items[position]
+        holder.title.text = currItem.title
+        holder.description.text = currItem.description
+    }
+}
+```
