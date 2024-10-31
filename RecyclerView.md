@@ -122,7 +122,44 @@ ExampleItem.kt
 ```kt
 package com.example.longpressprac.Model
 
-data class ExampleItem(val title: String, val description: String){
+data class ExampleItem(val title: String, val description: String){}
+```
+MainActivity.kt
+```kt
+package com.example.longpressprac
 
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.Adapter
+import com.example.longpressprac.Model.ExampleItem
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var adapter: com.example.longpressprac.Adapter.Adapter
+    private lateinit var recyclerView: RecyclerView
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val exampleList = generateList(100)
+        adapter = com.example.longpressprac.Adapter.Adapter(this, exampleList)
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager= LinearLayoutManager(this)
+        recyclerView.setHasFixedSize(true)
+    }
+
+    private fun generateList(size: Int): MutableList<ExampleItem>{
+        val list = mutableListOf<ExampleItem>()
+
+        for(i in 0 until size){
+            list.add(ExampleItem("TItle $i", "Description $i"))
+        }
+        return list
+    }
 }
 ```
