@@ -15,7 +15,7 @@
   - `RecyclerView` enforces the use of a `ViewHolder` pattern to improve performnace.
   - The `ViewHolder` class holds the views for each item and helps reduce unnecessary `findViewById()` calls during binding.
 
-# Basic Structure Example Code
+# Basic Structure (Example Code)
 activity_main.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
