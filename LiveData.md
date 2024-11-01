@@ -104,4 +104,4 @@ class ViewModel : ViewModel() {
 ```
 
 # Summary
-- LiveData simplifies data observation and helps build more robust and responsive apps by working seamlessly with Android's lifecycle management.
+- `LiveData` simplifies data observation and helps build more robust and responsive apps by working seamlessly with Android's lifecycle management.
