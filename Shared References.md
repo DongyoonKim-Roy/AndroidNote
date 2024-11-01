@@ -46,5 +46,5 @@ class MainActivity : AppCompatActivity() {
 - sharedEdit.apply() : wirtes the changes to disk asynchronously (faster, non-blocking).
 
 # Summary
-- `SharedPreferences` is an ideal choice for storing user prefernces and small, simple data.
-- It provides an easy to use API for reading and writing key-value pairs that persist across user sessions.
+- `SharedPreferences` is an ideal choice for **storing user prefernces and small, simple data**.
+- It provides **an easy to use API for reading and writing key-value pairs** that persist across user sessions.
