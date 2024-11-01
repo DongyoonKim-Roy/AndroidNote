@@ -37,13 +37,13 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-- sharedPreferences = getSharedPreferences("NoteData", Context.MODE_PRIVATE)
+- `sharedPreferences = getSharedPreferences("NoteData", Context.MODE_PRIVATE)`
   - `NoteData` : Name of the preference file. Multiple file can be created with different names.
   - `Context.MODE_PRIVATE` : Ensures that the file is **accessible only by your application**.
-- val sharedEdit = sharedPreferences.edit()
+- `val sharedEdit = sharedPreferences.edit()`
   - `sharedPrefefences.edit()` : creates an instance of `SharedPreferences.Editor`.
-- sharedEdit.putString("note", note) : Method to save data, (key, value). 
-- sharedEdit.apply() : wirtes the changes to disk asynchronously (faster, non-blocking).
+- `sharedEdit.putString("note", note)` : Method to save data, (key, value). 
+- `sharedEdit.apply()` : wirtes the changes to disk asynchronously (faster, non-blocking).
 
 # Summary
 - `SharedPreferences` is an ideal choice for **storing user prefernces and small, simple data**.
