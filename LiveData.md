@@ -59,3 +59,46 @@ mediator.addSource(myData) { value ->
   mediator.value = value.toUpperCase()
 }
 ```
+
+# Example Full Code
+`MainActivity.kt`
+```kt
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityMainBinding
+    private lateinit var viewModel: ViewModel
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        viewModel = ViewModelProvider(this).get(ViewModel::class.java)
+
+        viewModel.counterLiveData.observe(this, Observer {count->
+            binding.count.text = "$count"
+        })
+
+
+        binding.countBtn.setOnClickListener(){
+            viewModel.increment()
+        }
+    }
+}
+```
+
+`ViewModel.kt`
+```kt
+class ViewModel : ViewModel() {
+    private val countLiveData = MutableLiveData<Int>()
+
+    init {
+        countLiveData.value = 0
+    }
+
+    val counterLiveData: LiveData<Int>
+        get() = countLiveData
+
+    fun increment() {
+        countLiveData.value = (countLiveData.value ?: 0) + 1
+    }
+}
+```
