@@ -18,4 +18,44 @@
 
 ## Data Synchronization
 - It ensures taht the UI is always synchronized with the data.
-- WHen an observer becomes active, it receives the latest data immediately.
+- When an observer becomes active, it receives the latest data immediately.
+
+# Example
+- **Create LiveData**
+  - LiveData can be created within a `VIewModel` to hold data that the UI needs to display.
+```kt
+class MyViewModel : ViewModel(){
+  val myData: MutableLiveData<String> = NutableLiveData()
+}
+```
+
+- **Update LiveData**
+  - The value of LiveData can be updated by using `setValue()` on the main thread or `postValue()` from a background thread.
+```kt
+myData.value = "New Value" // Used on the main thread
+myData.postValue("New Value") // Used on background threads
+```
+
+- **Ovserve LiveData**
+  - In an activity or fragment, you can observe LiveData to respond to changes.
+```kt
+myViewModel.myData.observe(this, Observer { newData ->
+  textView.text = newData
+})
+```
+
+- **Transformations and MediatorLiveData**
+  - `Transformations` can be used to manipulate the LiveData before it is passed to the observer.
+  - This is useful for data formatting or mapping.
+  - `MediatorLiveData` can ovserve multiple LiveData sources and react when any of them change.
+```kt
+val transformedData = Transformations.map(myData) { data ->
+  "Formatted $data"
+}
+```
+```kt
+val mediator = MediatorLiveData<String>()
+mediator.addSource(myData) { value ->
+  mediator.value = value.toUpperCase()
+}
+```
