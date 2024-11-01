@@ -4,3 +4,10 @@
 - It helps prevent issues like memory leaks and unnecessary UI updates.
 
 # Key Features of LiveData
+## Lifecycle Awareness
+- It respects the lifecycle of the components (e.g., activities, fragments) that observe it.
+- It ensures that updates are only sent when the observer is in an active state, which helps prevent crashes and memory leaks.
+- Observers are automatically removed when the lifecycle owner (e.g., activities, fragments) is destroyed.
+
+## Automatic UI Updates
+- 
