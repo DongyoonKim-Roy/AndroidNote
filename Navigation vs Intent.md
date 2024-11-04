@@ -58,31 +58,30 @@ findNavController().navigate(R.id.action_currentFragment_to_nextFragment)
 # Key Differences
 ## Purpose
 **Intent**
-- It is mainly used for starting activities, services, and broadcasts.
+- It is mainly used for starting activities, services, and broadcasts.  
 **Navigation**
 - It is used for managing in-app navigation, especially with fragments, in a structured and organized way.
 
 ## Complexity
 **Intent**
-- It is more straightforward and better suited for simpler navigation tasks between activities.
+- It is more straightforward and better suited for simpler navigation tasks between activities.  
 **Navigation**
 - It is designed for more complex navigation flows, particularly when using fragments and handling back stacks and deep links.
 
 ## Data Passing
 **Intent**
-- It passes data using `putExtra()` and `getExtra()`, which can become error-prone when handling complex data types.
+- It passes data using `putExtra()` and `getExtra()`, which can become error-prone when handling complex data types.  
 **Navigation**
 - It ensures type-safe data passing between destinations with Safe Args.
 
 ## Back Stack Management
 **Intent**
-- It requires manual handling of the back stack which can be more complex when managing nested activities.
-
+- It requires manual handling of the back stack which can be more complex when managing nested activities.  
 **Navigation**
-- It automatically manages the back stack and handles navigation actions like popping and replacing fragments.
+- It automatically manages the back stack and handles navigation actions like popping and replacing fragments.  
 
 ## Deep Linking
 **Intent**
-- It supports deep linking but may require custom logic for parsing and handling URIs.
+- It supports deep linking but may require custom logic for parsing and handling URIs.  
 **Navigation**
 - It natively supporys deep linking with seamless integration into the navigation graph.
