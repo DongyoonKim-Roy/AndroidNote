@@ -55,5 +55,5 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-Summary
+# Summary
 - This parttern helps organize and structure code in a way that separates concerns, making the codebase more maintainable and testable.
