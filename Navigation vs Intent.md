@@ -77,6 +77,7 @@ findNavController().navigate(R.id.action_currentFragment_to_nextFragment)
 ## Back Stack Management
 **Intent**
 - It requires manual handling of the back stack which can be more complex when managing nested activities.
+
 **Navigation**
 - It automatically manages the back stack and handles navigation actions like popping and replacing fragments.
 
