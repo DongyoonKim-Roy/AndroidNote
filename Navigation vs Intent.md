@@ -3,7 +3,7 @@
 
 # Intent
 - An `Intent` is an object used to **start an activity**, send a broadcast, or start a service.
-- There are two types of intent, explicit and implicit.
+- There are two types of intent, **explicit** and **implicit**.
 
 ## Example
 `Explicit Intent`
