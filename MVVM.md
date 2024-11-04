@@ -18,12 +18,12 @@
 # Example
 ![스크린샷 2024-11-04 090437](https://github.com/user-attachments/assets/86b81a6a-6ebd-4894-9247-16c11771b2b5)
 
-CalculatorData.kt
+`CalculatorData.kt`
 ```kt
 data class CalculatorData(val num1: Int, val num2: Int, val sum: Int) 
 ```
 
-CalculatorViewModel.kt
+`CalculatorViewModel.kt`
 ```kt
 CalculatorViewModel : ViewMode(){
   fun calculateSum(num1: Int, num2: Int): CalculatorData{
@@ -33,7 +33,7 @@ CalculatorViewModel : ViewMode(){
 }
 ```
 
-MainActivity.kt
+`MainActivity.kt`
 ```kt
 class MainActivity : AppCompatActivity() {
   private lateinit var binding: ActivityMainBinding
@@ -56,4 +56,4 @@ class MainActivity : AppCompatActivity() {
 ```
 
 Summary
-- This parttern is popular in frameworks where data binding is used for UI development.
+- This parttern helps organize and structure code in a way that separates concerns, making the codebase more maintainable and testable.
