@@ -92,11 +92,11 @@ findNavController().navigate(R.id.action_currentFragment_to_nextFragment)
 - It natively supporys deep linking with seamless integration into the navigation graph.
 
 # When to Use
-## Intent
+**Intent**
 - Navigating between activities or launching external components like a browser or other apps.
-- THe navigation task is simple and doesn't require complex back stack management.
+- The navigation task is simple and doesn't require complex back stack management.
 
-## Navigation
+**Navigation**
 - Managing fragment-based navigation within an activity.
 - when a clear, structured way to defined navigation paths and actions are needed.
 - Features like Safe Args, deep linking, and better handling of the back stack are needed.
