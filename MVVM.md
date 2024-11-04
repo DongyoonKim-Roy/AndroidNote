@@ -32,6 +32,9 @@ CalculatorViewModel : ViewMode(){
   }
 }
 ```
+- By returing CalculatorData(num1, num2, sum), it encapsulate the input and result data in a single object.
+- This makes it easier to manage and pass around data, if the data needs to be displayed or processed further in the UI or another component.
+- Using a specific data class makes the return type clear and structured.
 
 `MainActivity.kt`
 ```kt
@@ -49,7 +52,7 @@ class MainActivity : AppCompatActivity() {
       val num2 = binding.sum2.text.toString().toIntOrNull() ?: 0
       val res = calculatorViewModel.calculaterSum(num1, num2)
 
-      binding.result.text = "${result.sum}"
+      binding.result.text = "${res.sum}"
     }
   }
 }
