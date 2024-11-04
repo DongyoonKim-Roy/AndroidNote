@@ -70,7 +70,8 @@ findNavController().navigate(R.id.action_currentFragment_to_nextFragment)
 
 ## Data Passing
 **Intent**
-- It passes data using `putExtra()` and `getExtra()`, which can become error-prone when handling complex data types.  
+- It passes data using `putExtra()` and `getExtra()`, which can become error-prone when handling complex data types.
+
 **Navigation**
 - It ensures type-safe data passing between destinations with Safe Args.
 
