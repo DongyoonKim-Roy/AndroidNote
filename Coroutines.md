@@ -13,3 +13,24 @@
 
 **Structured Concurrency**
 - Coroutines proved tools for structured concurrency, ensuring that operations are completed in a predictable manner and are properly cleaned up.
+
+# Example
+```kt
+binding.countBtn.setOnclickListener {
+  binding.countNumber.text = counter++.toString()
+}
+
+binding.downloadBtn.setOnClickListener {
+  CoroutineScope(Dispatchers.IO).launch {
+    for(i in 1..1000) {
+      Log.i("TAG", "Downloading $i in ${Thread.currentTHread().name}")
+    }
+  }
+}
+```
+- When countBtn is clicked, the count will be increased.
+- When dowloadBtn is clicked, "Downloading i" will display.
+- When download is in progress, countBtn will increase the count.
+
+# Summary
+- Coroutines provide a powerful tool for managing background tasks, improving app performance and keeping the UI responsive.
