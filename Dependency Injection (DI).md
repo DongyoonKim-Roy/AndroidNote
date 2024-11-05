@@ -24,6 +24,26 @@
 **Koin**
 - A lightweight, Kotlin-based DI framework taht is easy to set up and use, making ti a good alternative to Dagger/Hilt
 
+# Dagger Annotations
+## @Module
+**Purpose**
+- Indicates that a class is a Dagger Module.
+- A module is used to provide dependencies that cannot be crated with constructor injection alone.
+
+**Usage**
+- Annotate a class to signify that it will contain methods that provide dependencies.
+
+**Example**
+```kt
+@Module
+class NetworkModule {
+  @Provides
+  fun provideRetrofit(): Retrofit {
+    return Retrofit.Builder().baseurl("https://example.com").build()
+  }
+}
+```
+
 # Example
 ```
 ```
