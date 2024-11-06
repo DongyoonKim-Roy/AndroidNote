@@ -1,7 +1,9 @@
 # Dependency Injection (DI)
 - It is a pattern used to manage the dependencies of classes to promote better code structure and scalability.
 - It helps developers create more maintainable, testable, and modular applications.
-
+# What is Dependency?
+- It is any external code, library, or component that our application needs to function.
+- For instance, if our app needs to make network requests, we might use a library like Retrofit or OkHttp as a dependency to handle HTTP operations.
 # Why Dependency Injection?
 **Decoupling**
 - DI decouples components, like Activities, Fragments, and ViewModels, from the logic of how dependencies are created.
